@@ -9,7 +9,6 @@ rápida e sem complicação, economizando tempo e evitando falhas.
 Abaixo segue o código:
 
 public class cartaoValidator {
-
 	public static String validarBandeira(String numeroCartao) {
         String[][] bandeiras = {
             {"^5[1-5][0-9]{14}$", "Mastercard"},
