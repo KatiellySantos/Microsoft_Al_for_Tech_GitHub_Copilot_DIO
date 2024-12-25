@@ -7,6 +7,7 @@ rápida e sem complicação, economizando tempo e evitando falhas.
 ![Cartão02](https://github.com/user-attachments/assets/1b3e6550-4942-49df-9fcc-5e0f296d951c)
 
 Abaixo segue o código:
+
 public class cartaoValidator {
 
 	public static String validarBandeira(String numeroCartao) {
