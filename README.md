@@ -1,40 +1,34 @@
-# Construindo um Sistema de Reconhecimento de Bandeiras de Cartão de Crédito com o GitHub Copilot
+# Bem-vindo(a) ao repositório Microsoft AI for Tech GitHub Copilot da DIO! 🚀
+Este repositório faz parte do Bootcamp da DIO voltado para explorar como o GitHub Copilot, 
+impulsionado pela inteligência artificial, pode aumentar a produtividade e estimular a criação de soluções inovadoras.
 
-Identificar a bandeira de um cartão de crédito é algo bem comum quando estamos trabalhando em sistemas 
-de e-commerce ou de pagamentos. Com a ajuda do GitHub Copilot, você pode criar esse verificador de maneira 
-rápida e sem complicação, economizando tempo e evitando falhas.
-![Cartão01](https://github.com/user-attachments/assets/9ae2cb96-853d-4cce-9873-015d02b176b7)
-![Cartão02](https://github.com/user-attachments/assets/1b3e6550-4942-49df-9fcc-5e0f296d951c)
+Dentro deste repositório, está incluído o projeto autoral "Criando um Validador de Bandeiras de Cartão de Crédito", que foi 
+desenvolvido pela participante Katielly Santos durante o bootcamp.
 
-Abaixo segue o código:
+🏆 Projeto: Criando um Validador de Bandeiras de Cartão de Crédito
 
-public class cartaoValidator {
+O principal projeto deste repositório é o Validador de Bandeiras de Cartão de Crédito, que tem como objetivo:
 
-	public static String validarBandeira(String numeroCartao) {
-        String[][] bandeiras = {
-            {"^5[1-5][0-9]{14}$", "Mastercard"},
-            {"^4[0-9]{12}(?:[0-9]{3})?$", "Visa"},
-            {"^3[47][0-9]{13}$", "American Express"},
-            {"^(?:2131|1800|35\\d{3})\\d{11}$", "JCB"},
-            {"^8699[0-9]{11}$", "Voyager"},
-            {"^50[0-9]{14,17}$", "Aura"},
-            {"^(2014|2149)\\d{11}$", "EnRoute"},
-            {"^3(?:0[0-5]|[68][0-9])[0-9]{11}$", "Diners Club"},
-            {"^6(?:011|5[0-9]{2})[0-9]{12}$", "Discover"},
-            {"^(606282|3841)[0-9]{10,11}$", "Hipercard"}
-        };
+    Identificar a bandeira de um cartão de crédito (Visa, Mastercard, etc.) com base no número informado.
 
-        for (String[] bandeira : bandeiras) {
-            if (numeroCartao.matches(bandeira[0])) {
-                return bandeira[1];
-            }
-        }
-        return "Bandeira desconhecida";
-    }
+    Demonstrar a eficiência do GitHub Copilot no desenvolvimento ágil e assistido.
 
-    public static void main(String[] args) {
-        String numeroCartao = "6011565994344071"; // Exemplo de número de cartão
-        String bandeira = validarBandeira(numeroCartao);
-        System.out.println("A bandeira do cartão é: " + bandeira);
-    }	
-}
+    Aplicar conceitos de programação em um cenário prático e útil.
+
+Estrutura do Projeto
+
+    Código Fonte: Contém a lógica de validação.
+
+    Testes: Scripts para garantir o funcionamento correto do validador.
+
+    Documentação: Explicação dos passos para utilizar o projeto.
+
+🛠 Tecnologias Utilizadas
+
+    GitHub Copilot
+
+    Linguagem de Programação: (Java).
+
+    Editor de Código: Visual Studio Code.
+
+    Git/GitHub: Para controle de versão e compartilhamento do projeto.
